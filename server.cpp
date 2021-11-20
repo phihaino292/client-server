@@ -98,7 +98,8 @@ int main()
     /* ---------- BINDING THE SOCKET ---------- */
     /* ---------------- bind() ---------------- */
 
-
+/* 	Gán địa chỉ cho socket bind (client, (struct sockaddr*)&server_addr,sizeof(server_addr))  
+các tham số lần lượt là mô tả socket vừa tạo, con trỏ chỏ đến địa chỉ socket, độ lớn địa chỉ */
     if ((bind(client, (struct sockaddr*)&server_addr,sizeof(server_addr))) < 0) 
     {
         cout << "=> Error binding connection, the socket has already been established..." << endl;
